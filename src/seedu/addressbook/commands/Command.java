@@ -40,6 +40,11 @@ public abstract class Command {
      * Executes the command and returns the result.
      */
     public abstract CommandResult execute();
+    
+    /**
+     * Returns true for commands that changes the data
+     */
+    public abstract boolean isMutating();
 
     /**
      * Supplies the data the command will operate on.
